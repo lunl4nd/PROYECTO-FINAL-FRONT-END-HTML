@@ -1,3 +1,5 @@
+
+
 header{
     background-color: #051E3C;
     display: flex;
@@ -51,17 +53,61 @@ body {
 }
 
 .slide {
-    width: 100%;
+    width: 25%;
+    flex-shrink: 0;
 }
 
 .slide img{
+    width: 100%;
     display:block;
     height:auto;
 }
 
 h1 {
+    font-family: "Fascinate Inline";
     text-align: center;
-    font-family: 'Montserrat';
-    font-size: 36px;
+    font-size: 70px;
     color:#051E3C
+}
+
+h2 {
+    font-family:"Montserrat";
+    text-align: center;
+    font-size: 36px;
+    color:#051E3C;
+}
+
+.main-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    max-width: 1414px;
+    margin: 0 auto;
+    
+}
+
+.items {
+    padding:20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #d9e9ff;
+    background-color: #d9e9ff;
+    font-family: "Montserrat";
+}
+
+.items img {
+    width: 80%;
+    max-width: 200px;
+}
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .container{
+        max-width: 100%;
+        padding: 10px;
+    }
 }
