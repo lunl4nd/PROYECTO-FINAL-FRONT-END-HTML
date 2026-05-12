@@ -1,3 +1,5 @@
+cargarCarrito();
+
 const track = document.querySelector('.carousel-track');
 let index = 0;
 const totalSlides = 3;
@@ -17,3 +19,22 @@ function moverCarrusel() {
 }
 
 setInterval(moverCarrusel, 6000);
+
+const botones = document.querySelectorAll('.items')
+
+botones .forEach((boton) => {
+    boton.addEventListener ("click", addToCarrito)
+})
+
+function addToCarrito (event){
+    var prod = {
+        id: event.target.getAttribute('data-id'),
+        nombre: event.target.getAttribute('data-nombre'),
+        precio: event.target.getAttribute('data-precio')
+    };
+
+    var carrito = JSON.parse(localStorage.getItem('carrito'))|| [];
+    carrito.push(prod);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    cargarCarrito();
+}
