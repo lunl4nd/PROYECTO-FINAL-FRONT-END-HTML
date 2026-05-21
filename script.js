@@ -1,4 +1,4 @@
-cargarCarrito();
+//cargarCarrito();
 
 const track = document.querySelector('.carousel-track');
 let index = 0;
