@@ -1,4 +1,3 @@
-//cargarCarrito();
 
 const track = document.querySelector('.carousel-track');
 let index = 0;
@@ -20,6 +19,8 @@ function moverCarrusel() {
 
 setInterval(moverCarrusel, 6000);
 
+cargarCarrito();
+
 const botones = document.querySelectorAll('.items')
 
 botones .forEach((boton) => {
@@ -37,4 +38,11 @@ function addToCarrito (event){
     carrito.push(prod);
     localStorage.setItem('carrito', JSON.stringify(carrito));
     cargarCarrito();
+}
+
+function cargarCarrito (){
+    let carrito = JSON.parse(localStorage.getItem('carrito')) ||[];
+
+    let contador = document.getElementById('contador-carrito');
+    contador.innerText = 'Carrito (${carrito.length})';
 }
