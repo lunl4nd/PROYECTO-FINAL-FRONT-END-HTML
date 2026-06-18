@@ -21,7 +21,7 @@ setInterval(moverCarrusel, 6000);
 
 cargarCarrito();
 
-const botones = document.querySelectorAll('.items')
+const botones = document.querySelectorAll('.items button')
 
 botones .forEach((boton) => {
     boton.addEventListener ("click", addToCarrito)
@@ -44,5 +44,24 @@ function cargarCarrito (){
     let carrito = JSON.parse(localStorage.getItem('carrito')) ||[];
 
     let contador = document.getElementById('contador-carrito');
-    contador.innerText = 'Carrito (${carrito.length})';
+    contador.innerText = `Carrito (${carrito.length})`;
 }
+
+const botonVaciar = document.getElementById('vaciar-carrito');
+
+botonVaciar.addEventListener('click', vaciarTodo);
+
+function vaciarTodo(){
+    localStorage.removeItem('carrito');
+    cargarCarrito();
+}
+
+const contacto = document.querySelector('form');
+
+contacto.addEventListener('submit', function(event){
+    event.preventDefault();
+    if (nombre.value == 0 || email.value == 0 || consulta.value== 0){
+        alert("¡Uno de los campos no está lleno! Por favor verificar")
+        return;
+    }
+})
