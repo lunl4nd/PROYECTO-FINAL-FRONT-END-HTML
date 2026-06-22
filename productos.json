@@ -2,26 +2,49 @@
   {
     "id": "1",
     "nombre": "Tokyo Revengers 7",
-    "precio": 11000
+    "precio": 11000,
+    "imagen": "img/prod1.png"
   },
   {
     "id": "2",
     "nombre": "Tokyo Revengers 8",
-    "precio": 11000
+    "precio": 11000,
+    "imagen": "img/prod2.png"
   },
   {
     "id": "3",
     "nombre": "Death Note 12",
-    "precio": 11000
+    "precio": 11000,
+    "imagen": "img/prod3.png"
   },
   {
     "id": "4",
     "nombre": "My hero Academia 16",
-    "precio": 11000
+    "precio": 11000,
+    "imagen": "img/prod4.png"
   },
   {
     "id": "5",
     "nombre": "Jojo's Bizarre Adventure Part III: Stardust Crusaders 5",
-    "precio": 21000
+    "precio": 21000,
+    "imagen": "img/prod5.png"
+  },
+   {
+    "id": "6",
+    "nombre": "Gachiakuta 7",
+    "precio": 11000,
+    "imagen": "img/prod6.png"
+  },
+   {
+    "id": "7",
+    "nombre": "Akira 1",
+    "precio": 34000,
+    "imagen": "img/prod7.png"
+  },
+  {
+    "id": "8",
+    "nombre": "One Punch Man 21",
+    "precio": 12000,
+    "imagen": "img/prod8.png"
   }
 ]
