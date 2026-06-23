@@ -179,10 +179,42 @@ button{
 }
 
 .img-carrito{
-    width:120px;
+    width:90px;
     height:auto;
     display:block;
     margin-bottom:10px;
+}
+
+.item-carrito{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    max-width:850px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:8px;
+    background-color:#d9e9ff;
+    font-family: Montserrat;
+}
+
+.item-carrito button {
+    background-color: #5b8cc7 ;
+    border: 0;
+    margin-top:0;
+}
+
+#vaciar-carrito{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    align-items: center;
+}
+
+#pagar-carrito{
+    display:flex;
+    justify-content: center;
+    width: 200px;
+    align-items: center;
 }
 @media (max-width: 768px){
     header {

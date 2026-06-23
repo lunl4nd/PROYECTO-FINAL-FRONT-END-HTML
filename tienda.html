@@ -17,7 +17,6 @@
     <nav>
         <ul class="menu"> <li><a href="index.html">Inicio</a></li>
             <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="acercade.html">Acerca de</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="carrito.html" id="contador-carrito">Carrito</a></li>
         </ul>
@@ -25,81 +24,10 @@
 </header>
 
 <h2>Nuestros Productos</h2>
-<select id="filtros" class="filtros">
-    <option value="destacado">Destacado</option>
-    <option value="abecedario">A-Z</option>
-    <option value="precio">Precio: Menor a Mayor</option>
-</select>
-
 <section class="container">
-        <div class="prods-flex">
-            <div class="items" id="prod1">
-                <img src="img/prod1.png" alt="Tokyo Revengers 7">
-                <h3> TOKYO REVENGERS 7</h3>
-                <p> 11000 ARS</p>
-                <button style="margin-top: 0; width: 160px;" data-id="1" data-nombre="TOKYO REVENGERS 7" data-precio="11000"  data-imagen="img/prod1.png">
-                    Añadir al carrito
-                </button>
-        </div>
-            <div class="items" id="prod2">
-                <img src="img/prod2.png" alt="Tokyo Revengers 8">
-                <h3> TOKYO REVENGERS 8</h3>
-                <p> 11000 ARS</p>
-                 <button style="margin-top: 0; width: 160px;" data-id="2" data-nombre="TOKYO REVENGERS 8" data-precio="11000"  data-imagen="img/prod2.png">
-                    Añadir al carrito
-                </button>
-        </div>
-        <div class="items" id="prod3">
-            <img src="img/prod3.png" alt="Death Note 12">
-            <h3> DEATH NOTE 12</h3>
-            <p> 11000 ARS</p>
-            <button style="margin-top: 0; width: 160px;" data-id="3" data-nombre="DEATH NOTE 12" data-precio="11000"  data-imagen="img/prod3.png">
-             Añadir al carrito
-            </button>
-        </div>
-        <div class="items" id="prod4">
-            <img src="img/prod4.png" alt="Boku no hero 16">
-            <h3> MY HERO ACADEMIA 16</h3>
-            <p> 11000 ARS</p>
-             <button style="margin-top: 0; width: 160px;" data-id="4" data-nombre="MY HERO ACADEMIA 16" data-precio="11000"  data-imagen="img/prod4.png">
-             Añadir al carrito
-            </button>
-        </div>
-         <div class="items" id="prod5">
-            <img src="img/prod5.png" alt="Jojo's part 3 05">
-            <h3> JOJO'S BIZARRE ADVENTURE PART III: STARDUST CRUSADERS 05</h3>
-            <p> 21000 ARS</p>
-             <button style="margin-top: 0; width: 160px;" data-id="5" data-nombre="JOJO'S BIZARRE ADVENTURE PART III: STARDUST CRUSADERS 05" data-precio="21000"  data-imagen="img/prod5.png">
-             Añadir al carrito
-            </button>
-        </div>
-         <div class="items" id="prod6">
-            <img src="img/prod6.png" alt="Gachiakuta 7">
-            <h3> GACHIAKUTA 7</h3>
-            <p> 11000 ARS</p>
-            <button style="margin-top: 0; width: 160px;" data-id="6" data-nombre="GACHIAKUTA 7" data-precio="11000"  data-imagen="img/prod6.png">
-             Añadir al carrito
-            </button>
-        </div>
-        <div class="items" id="prod7">
-            <img src="img/prod7.png" alt="AKIRA 1">
-            <h3> AKIRA 1</h3>
-            <p> 34000 ARS</p>
-            <button style="margin-top: 0; width: 160px;" data-id="7" data-nombre="AKIRA 1" data-precio="34000"  data-imagen="img/prod7.png">
-             Añadir al carrito
-            </button>
-        </div>
-        <div class="items" id="prod8">
-            <img src="img/prod8.png" alt="One Punch Man 21">
-            <h3> ONE PUNCH MAN 21</h3>
-            <p> 12000 ARS</p>
-            <button style="margin-top: 0; width: 160px;" data-id="8" data-nombre="ONE PUNCH MAN 21" data-precio="12000"  data-imagen="img/prod8.png">
-             Añadir al carrito
-            </button>
-        </div>
-    </div>
-    </section>
+    <div id="contenedor-tienda" class="prods-flex"></div>
+</section>
 
- <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
